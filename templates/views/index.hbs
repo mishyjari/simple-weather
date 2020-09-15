@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='icon' href='/images/weather.png' />
+    <title>Weather</title>
+</head>
+<body>
+    <div class='main-content'>
+        {{>header}}
+
+        <form id='search'>
+            <input placeholder='Location' name='query' id='query'/>
+            <button type='submit'>Search</button>
+        </form>
+
+        <p id='forecast'>Get your weather here!</p>
+    </div>
+    {{>footer}}
+
+    <script src='/scripts/app.js'></script>
+</body>
+</html>
